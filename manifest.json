@@ -1,0 +1,20 @@
+{
+  "name": "chrome-extension-boilerplate",
+  "description": "A boilerplate to kickstart Chrome extension development.",
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "*://mail.google.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "css": [
+        "gmail.css"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
